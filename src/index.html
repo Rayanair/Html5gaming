@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Call of duty black ops 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/src/Styles.css">
+  </head>
+
+  <body>
+    <div id="debug"></div>
+    <div id="menu">
+    <h1>Call of Duty: Zombies</h1>
+    <button id="start_game">Nouvelle Partie</button>
+    <button id="option">Options</button>
+  </div>
+    <div id="game_hud">
+      <img id="crosshair" src="<%=require('./ui/crosshair.png')%>" />
+      <div id="ammo_container">
+        <span id="current_ammo">0</span>
+        <span>|</span>
+        <span id="max_ammo">0</span>
+      </div>
+      <div id="health_container">
+        <div id="health_progress"></div>
+      </div>
+    </div>
+    <div id="progress"></div>
+    <my-app></my-app>
+    <div class="gameover">
+      <h1>Game Over</h1>
+      <button id="restart_game">Recommencer</button></div>
+  </body>
+</html>
